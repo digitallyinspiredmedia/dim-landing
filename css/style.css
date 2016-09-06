@@ -358,6 +358,7 @@ ul.list-logo {
 
 
 .list-logo li{
+  display: none;
   float: left;
   position: relative;
   height: 78px;
@@ -1629,6 +1630,7 @@ body.overflown{
 /* to top */
 
 .learnmore{
+  display: none;
   width: 10px; 
   height: 10px;
   border: 10px solid transparent;

@@ -254,21 +254,10 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 }
 
 /* page lift click / scroll to top */
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 200) {
-      $('.learnmore').fadeIn();
-    } else {
-      $('.learnmore').fadeOut();
-    }
-  });
-  
-  //Click event to scroll to top
-  $('.learnmore').click(function(){
-    $('html, body').animate({scrollTop : 0},800);
-    return false;
-  });
+ 
 
 /* click animation flow */
+/*
 jQuery(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -283,3 +272,4 @@ jQuery(function() {
     }
   });
 });
+*/

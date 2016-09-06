@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
@@ -714,8 +715,28 @@
     <script src="dist/js/TweenMax.min.js"></script>
     <script src="dist/js/waypoints.js"></script>
     <script src="dist/js/counterup.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="dist/js/jquery.scrollto.js"></script>
+    <script type="text/javascript">
+
+var currentCount= 0;
+var maxCount= 4;
+ $('.list-logo').each(function() {
+   $(this).find('li').slice(currentCount, maxCount).show().addClass('kavin');
+   console.log('slicedone');
+   $("#clientMore").on('click', function (e) {
+        e.preventDefault();
+        $(".list-logo li:hidden").slice(0, 4).slideDown();
+        if ($(".list-logo li:hidden").length == 0) {
+            $("#clientMore").remove();
+        }else{
+                  $(".list-logo li:hidden").slice(0, 4).slideUp().addhtml('asd');
+
+        }
+    });
+});
+
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
